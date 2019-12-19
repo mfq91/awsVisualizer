@@ -1,5 +1,5 @@
 # awsVisualizer
-This is a python script that allows to make queries to an aws account
+This is a python script that allows to make simple queries to an aws account (you can code more queries if you want. There are many possibilities)
 
 Downloading the docker image:
 
