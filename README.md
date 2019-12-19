@@ -9,7 +9,7 @@ Volumes creation:
 
 docker volume create visualizer # Put the script inside of this volume (/var/lib/docker/volumes/visualizer/_data/)
 
-docker volume create [account-name]-config # Put credentials of the aws account here (/var/lib/docker/volumes/[account-name]-config/_data/)
+docker volume create [account-name]-config # Put credentials of the aws account here 
 
 Launch the container:
 
