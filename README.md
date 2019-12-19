@@ -1,20 +1,20 @@
 # awsVisualizer
 This is a python script that allows to make queries to an aws account
 
-Usage:
+Downloading the docker image:
 
 docker pull mauro1991/aws-visualizer:v0.1
 
-Volumes creation:
+Creating volumes:
 
 docker volume create visualizer # Put the script inside of this volume (/var/lib/docker/volumes/visualizer/_data/)
 
-docker volume create [account-name]-config # Put credentials of the aws account here 
+docker volume create [account1-name]-config # Put credentials of the aws account here 
 
-Launch the container:
+Launching the container:
 
-docker run -td --name [Name] -v [account-name]-config:/root/.aws -v visualizer:/home mauro1991/aws-visualizer:v0.1
+docker run -td --name container-name -v [account1-name]-config:/root/.aws -v visualizer:/home mauro1991/aws-visualizer:v0.1
 
-Execute the script:
+Executing the script:
 
-docker exec mfq-container python /home/visualizer.py [options]
+docker exec container-name python /home/visualizer.py [options]
